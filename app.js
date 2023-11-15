@@ -1,3 +1,11 @@
-alert("It's working!)");
+let rating = 1;
 
-console.error("Oh, no!");
+if (rating === 1) {
+    console.log("meets expectations")
+}
+else if (rating === 0) {
+console.log("does not meet expectations")
+}
+else {
+    console.log("idk");
+}
