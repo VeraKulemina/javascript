@@ -19,4 +19,10 @@ function makeError (msg:string) :never{
     throw new Error(msg);
 }
 
+function twoFer(name: string = "you") :string {
+    return `One for ${name}, one for me`;
+}
 
+function isLeapyear(year : number) : boolean {
+    return(year % 4 === 0 && year % 100 !== 0 || year % 400 === 0)
+}
