@@ -14,4 +14,9 @@ colors.map(color => {
     return color.toUpperCase();
 })
 
+// never 
+function makeError (msg:string) :never{
+    throw new Error(msg);
+}
+
 
