@@ -59,4 +59,13 @@ const stuff: (number | string)[] = [];
 
 //literal types
 const zero: 0 = 0;
+//you can't do zero = 2 not allowed
 
+const mood: "happy" | "sad" = "happy";
+
+//enums 
+
+enum arrowKey {
+  up,
+  down
+}
