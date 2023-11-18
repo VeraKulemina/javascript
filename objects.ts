@@ -13,7 +13,7 @@
    radius: number;
  }
 
- type Combain = Point & Circle;
+ type Combain = Point & Circle & {age: number;}
 
  const combains = {
    x: 2,
