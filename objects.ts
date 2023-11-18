@@ -53,4 +53,8 @@ function pringAge(age:number | string):void {
    console.log(`${age} years`);
 }
 
+//union types for arrays 
+
+const stuff: (number | string)[] = [];
+
 
