@@ -20,3 +20,19 @@
    y: 3,
    radius: 4
  }
+
+ type Movie ={
+   readonly title: string,
+   originalTitle?: string,
+   director: string,
+   releaseYear: number,
+   boxOffice: {
+      budget: number,
+      grossUS: number,
+      grossWorld: number
+   },
+ }
+
+ function getProfit ( movie : Movie) : number {
+   return movie.boxOffice.grossWorld - movie.boxOffice.budget;
+ }
