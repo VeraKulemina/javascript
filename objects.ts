@@ -36,3 +36,21 @@
  function getProfit ( movie : Movie) : number {
    return movie.boxOffice.grossWorld - movie.boxOffice.budget;
  }
+
+ //alternative syntax for defining arrays
+
+ let names: Array<string> = ["hello", "world"];
+
+ let ages:number[] = [3, 4];
+
+ const gameBoard:string[][] = []; // two domentional array
+
+//union type 
+
+let age:number | string = 0;
+
+function pringAge(age:number | string):void {
+   console.log(`${age} years`);
+}
+
+
