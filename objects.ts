@@ -57,4 +57,6 @@ function pringAge(age:number | string):void {
 
 const stuff: (number | string)[] = [];
 
+//literal types
+const zero: 0 = 0;
 
