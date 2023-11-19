@@ -69,3 +69,26 @@ enum arrowKey {
   up,
   down
 }
+
+
+
+//interface 
+
+interface Person {
+  readonly id: number;
+  first: string;
+  last: string;
+  nickname?: string;
+  sayHi: () => string;
+
+}
+
+const thomas: Person = {
+  id: 1,
+  first: "Thomas",
+  last: "Hardy",
+  nickname: "Tom",
+  sayHi: () => {
+    return "Hello";
+  },
+};
