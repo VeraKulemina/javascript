@@ -1,11 +1,13 @@
-let rating = 1;
 
-if (rating === 1) {
-    console.log("meets expectations")
-}
-else if (rating === 0) {
-console.log("does not meet expectations")
+
+
+let highScore = 1500;
+let userScore = 1600;
+
+if (userScore >= highScore) {
+    console.log(`congrats you have new high score of ${userScore}`)
+    highScore = userScore;
 }
 else {
-    console.log("idk");
+console.log( "Good Game!");
 }
