@@ -23,3 +23,7 @@ userReviews.name = "Vera";
 
 const nums = [1,2,3];
 const mystery = nums;
+
+for(let i = 1; i <= 10; i++){
+    console.log(i);
+}
