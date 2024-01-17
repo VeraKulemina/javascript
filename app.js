@@ -1,29 +1,24 @@
-let colors =["red", "green", "blue"];
+const examScore = [
+    { 
+        firstName: 'John',
+        score : 89
+    },
+    { 
+        firstName: 'Vera',
+        score : 99
+    },
+    { 
+        firstName: 'Joel',
+        score : 70
+    }      
+]
 
-colors[colors.length] = "red"
-
-let numbers = [1,2,3];
-
-let mix = colors.concat(numbers);
-
-
-const fitData = {
-steps: 1500, 
-name: "Vera",
-totalMiles: 1000,
-100: "one hundred"
+for (let i=0; i<examScore.length; i++) {
+    console.log(examScore[i].firstName + ' '+" scored"+ " " + examScore[i].score);
 }
 
-let mySteps = "steps"
+const word ="stressed";
 
-const userReviews = {};
-
-userReviews.name = "Vera";
-
-
-const nums = [1,2,3];
-const mystery = nums;
-
-for(let i = 1; i <= 10; i++){
-    console.log("hell0:", i);
+for (let i = word.length -1; i > 0; i--) {
+    console.log(word[i]);
 }
