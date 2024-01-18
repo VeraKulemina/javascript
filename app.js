@@ -7,8 +7,23 @@
 //     }
 // }
 
-const lop = [1,2,3];
+// const lop = [1,2,3];
 
-for(let item of lop){
-    console.log(item)
+// for(let item of lop){
+//     console.log(item)
+// }
+
+// for loop and objects
+
+const movie = {
+    Arrival: 9.5,
+    Alien: 9.0,
+    Amelie: 9
+}
+
+// console.log(Object.keys(movie));
+// console.log(Object.values(movie));
+
+for(let m of Object.keys(movie)) {
+    console.log(m, movie[m]);
 }
