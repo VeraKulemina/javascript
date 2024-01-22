@@ -31,3 +31,8 @@ const movie = {
 for( let m in movie){
     console.log(m);
 }
+
+function isPurple(color){
+    return color.toLowerCase() === 'purple'
+        
+}
