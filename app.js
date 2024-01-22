@@ -15,24 +15,34 @@
 
 // for loop and objects
 
-const movie = {
-    Arrival: 9.5,
-    Alien: 9.0,
-    Amelie: 9
-}
-
-// console.log(Object.keys(movie));
-// console.log(Object.values(movie));
-
-// for(let m of Object.keys(movie)) {
-//     console.log(m, movie[m]);
+// const movie = {
+//     Arrival: 9.5,
+//     Alien: 9.0,
+//     Amelie: 9
 // }
 
-for( let m in movie){
-    console.log(m);
-}
+// // console.log(Object.keys(movie));
+// // console.log(Object.values(movie));
 
-function isPurple(color){
-    return color.toLowerCase() === 'purple'
+// // for(let m of Object.keys(movie)) {
+// //     console.log(m, movie[m]);
+// // }
+
+// for( let m in movie){
+//     console.log(m);
+// }
+
+// function isPurple(color){
+//     return color.toLowerCase() === 'purple'
         
+// }
+
+function isValidPassword(password, username){
+    if (password.length >= 8 && 
+        password.indexOf(" ") === -1 && 
+        password.indexOf(username) === -1
+        ){
+        return true
+    }
+    return false
 }
