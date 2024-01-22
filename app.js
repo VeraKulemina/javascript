@@ -24,6 +24,10 @@ const movie = {
 // console.log(Object.keys(movie));
 // console.log(Object.values(movie));
 
-for(let m of Object.keys(movie)) {
-    console.log(m, movie[m]);
+// for(let m of Object.keys(movie)) {
+//     console.log(m, movie[m]);
+// }
+
+for( let m in movie){
+    console.log(m);
 }
