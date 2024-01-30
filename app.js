@@ -64,3 +64,11 @@ const alphabetArray = [
 function isPangram(str) {
     console.log('hi');
 }
+
+function outer() {
+  let movie = "amadeus";
+  function inner() {
+    console.log(movie.toUpperCase())
+  }
+  inner();
+}
