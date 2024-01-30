@@ -37,12 +37,30 @@
         
 // }
 
-function isValidPassword(password, username){
-    if (password.length >= 8 && 
-        password.indexOf(" ") === -1 && 
-        password.indexOf(username) === -1
-        ){
-        return true
-    }
-    return false
+// function isValidPassword(password, username){
+//     return password.length >= 8 && 
+//         password.indexOf(" ") === -1 && 
+//         password.indexOf(username) === -1
+// }
+
+
+// let sum = 0;
+// let avg = 0
+// function getAvarage(array){
+//     for(let i=0; i<array.length; i++){
+//         sum += array[i];
+//     }
+    
+//     return avg = sum/array.length;
+// }
+
+const alphabetArray = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+  ];
+
+  let str = "The quick brown fox jumps over the lazy dog";
+
+function isPangram(str) {
+    console.log('hi');
 }
