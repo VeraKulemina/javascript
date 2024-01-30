@@ -91,3 +91,7 @@ const functions = [add, multiply, sub, divide, divide]
 
 functions[1](1, 2) // 2
 
+for(let func of functions) {
+  let result = func(1,4);
+  console.log(result); // returns all the functions recults after looping through array functions
+}
