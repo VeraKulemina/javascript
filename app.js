@@ -95,3 +95,9 @@ for(let func of functions) {
   let result = func(1,4);
   console.log(result); // returns all the functions recults after looping through array functions
 }
+
+const thing = {
+  doSomething: add
+}
+
+console.log(thing.doSomething(2, 3)); // 5
