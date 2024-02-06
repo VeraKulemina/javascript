@@ -73,31 +73,47 @@
 //   inner();
 // }
 
-function add(a,b) {
-  return a+b
+// function add(a,b) {
+//   return a+b
+// }
+
+// function divide(a,b) {
+//   return a / b
+// }
+// function sub(a,b) {
+//   return a -b
+// }
+// function multiply(a,b) {
+//   return a*b;
+// }
+
+// const functions = [add, multiply, sub, divide, divide]
+
+// functions[1](1, 2) // 2
+
+// for(let func of functions) {
+//   let result = func(1,4);
+//   console.log(result); // returns all the functions recults after looping through array functions
+// }
+
+// const thing = {
+//   doSomething: add
+// }
+
+// console.log(thing.doSomething(2, 3)); // 5
+
+//array callbacks
+
+const numbers = [1, 2, 3, 4, 5, 6, 7]
+
+function printTriple(n) {
+  console.log(n * 3);
 }
 
-function divide(a,b) {
-  return a / b
-}
-function sub(a,b) {
-  return a -b
-}
-function multiply(a,b) {
-  return a*b;
-}
+numbers.forEach(printTriple);
 
-const functions = [add, multiply, sub, divide, divide]
 
-functions[1](1, 2) // 2
-
-for(let func of functions) {
-  let result = func(1,4);
-  console.log(result); // returns all the functions recults after looping through array functions
+const doubles = numbers.map(function(n) { 
+  return n*2
 }
-
-const thing = {
-  doSomething: add
-}
-
-console.log(thing.doSomething(2, 3)); // 5
+);
