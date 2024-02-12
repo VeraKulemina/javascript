@@ -104,7 +104,7 @@
 
 //array callbacks
 
-const numbers = [1, 2, 3, 4, 5, 6, 7]
+const numbers = ["hi", "lo"]
 
 function printTriple(n) {
   console.log(n * 3);
@@ -117,3 +117,7 @@ const doubles = numbers.map(function(n) {
   return n*2
 }
 );
+
+const movie = numbers.find(movie => {
+  return movie.includes("hi");
+})
