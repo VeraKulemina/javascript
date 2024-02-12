@@ -121,3 +121,5 @@ const doubles = numbers.map(function(n) {
 const movie = numbers.find(movie => {
   return movie.includes("hi");
 })
+
+const hi = numbers.filter(n => n.includes("hi"))
