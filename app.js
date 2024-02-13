@@ -29,6 +29,20 @@ const books = [
   }
 ];
 
-const ascSort = books.sort((a, b) => a.rating - b.rating);
+// const ascSort = books.sort((a, b) => a.rating - b.rating);
 // const descSort = books.sort((a, b) => b.rating - a.rating);
+const nums = [3,4,5,6,7, 3, 49]
+const redused = nums.reduce((acc, book) => acc + book)
 
+const maxVal = nums.reduce((max, curVal) => {
+  if (curVal > max) return curVal;
+  return max
+})
+
+const maxVal2 = nums.reduce((max, curVal) => {
+  return Math.max(max, curVal)
+})
+
+const minVal = nums.reduce((max, curVal) => {
+  return Math.min(max, curVal)
+})
