@@ -60,7 +60,7 @@ const votes = ["y", "n", "y", "n", "y", "y", "y","y", "n","n","n","n"]
 //   return tally
 // }, {})
 
-const results = votes.reduceRight((tally, current) => {
+const results = votes.reduce((tally, current) => {
   tally[current] = (tally[current] ||  0 ) +1;
   return tally;
 }, {})
@@ -71,3 +71,7 @@ const groupedBooks = books.reduce((group, book) => {
   group[key].push(book)
   return group;
 }, {})
+
+//spread 
+
+Math.max(...nums)
