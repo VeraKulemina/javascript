@@ -32,7 +32,7 @@ const books = [
 // const ascSort = books.sort((a, b) => a.rating - b.rating);
 // const descSort = books.sort((a, b) => b.rating - a.rating);
 const nums = [3,4,5,6,7, 3, 49]
-const redused = nums.reduce((acc, book) => acc + book)
+const redused = nums.reduce((acc, book) => acc + book, 100)
 
 const maxVal = nums.reduce((max, curVal) => {
   if (curVal > max) return curVal;
@@ -46,3 +46,28 @@ const maxVal2 = nums.reduce((max, curVal) => {
 const minVal = nums.reduce((max, curVal) => {
   return Math.min(max, curVal)
 })
+
+//tallynig
+
+const votes = ["y", "n", "y", "n", "y", "y", "y","y", "n","n","n","n"]
+
+// const results = votes.reduceRight((tally, current) => {
+//   if(tally[current]) {
+//     tally[current] ++;
+//   } else {
+//     tally[current] = 1;
+//   }
+//   return tally
+// }, {})
+
+const results = votes.reduceRight((tally, current) => {
+  tally[current] = (tally[current] ||  0 ) +1;
+  return tally;
+}, {})
+
+const groupedBooks = books.reduce((group, book) => {
+  const key = Math.floor(book.rating);
+  if(!group[key]) group[key] = []
+  group[key].push(book)
+  return group;
+}, {})
