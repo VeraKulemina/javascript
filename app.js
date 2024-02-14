@@ -75,3 +75,14 @@ const groupedBooks = books.reduce((group, book) => {
 //spread 
 
 Math.max(...nums)
+
+let str = "helloworkld"
+
+const arr = [... str];
+
+const obj = {...nums};
+
+const strObj = {..."helloworkld"}
+
+//rest
+
