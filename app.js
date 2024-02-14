@@ -86,9 +86,20 @@ const strObj = {..."helloworkld"}
 
 //rest
 
-function sum() {
-  const args = [...arguments];
-  return args.reduce((sum, arg) =>{
-    return sum + arg;
-  })
-}
+// function sum() {
+//   const args = [...arguments];
+//   return args.reduce((sum, arg) =>{
+//     return sum + arg;
+//   })
+// }
+
+function sum(...nums) {
+return nums.reduce((total, curVal)=> {
+  return total + curVal;
+})}
+
+// distructuring an arryas
+
+const fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Strawberry'];
+
+const colors = [green, yellow, orange] = fruits;
