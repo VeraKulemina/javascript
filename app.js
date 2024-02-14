@@ -86,3 +86,9 @@ const strObj = {..."helloworkld"}
 
 //rest
 
+function sum() {
+  const args = [...arguments];
+  return args.reduce((sum, arg) =>{
+    return sum + arg;
+  })
+}
