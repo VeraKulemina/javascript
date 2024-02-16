@@ -107,3 +107,18 @@ const fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Strawberry'];
 // const colors = [green, yellow, , ,red] = fruits;
 const colors = [green, ...others] = fruits;
 
+
+//short hand properties
+
+//computed properties
+
+const role = "host";
+const person = "Jools Holland";
+const role2 = "Director";
+const person2 = "James Cameron";
+
+const team = {
+  [role]: person, 
+  [role2]: person2
+}
+
