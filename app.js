@@ -122,3 +122,5 @@ const team = {
   [role2]: person2
 }
 
+//methods for objects
+
