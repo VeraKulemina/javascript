@@ -102,4 +102,8 @@ return nums.reduce((total, curVal)=> {
 
 const fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Strawberry'];
 
-const colors = [green, yellow, orange] = fruits;
+// const colors = [green, yellow, orange] = fruits;
+
+// const colors = [green, yellow, , ,red] = fruits;
+const colors = [green, ...others] = fruits;
+
