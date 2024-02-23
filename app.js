@@ -28,7 +28,16 @@ const hi = document.querySelector('h1')
 
 const special  =document.querySelector("li.special")
 
+// css selector syntax 
+
+const peas = document.querySelector('section li.special')
+
+const password = document.querySelector('input[type="password"]');
+
 // querySelectorAll
+
+//returns collection of all
+//and you can select one with array methods like Array[index] we getting result as NodeList vs. HTML collection 
 
 
 
