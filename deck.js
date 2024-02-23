@@ -44,3 +44,7 @@ const myDeck = {
 //fishe yreits shuffle algorithm 
 
 //DOM
+
+// document.getElementById
+
+
