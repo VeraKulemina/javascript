@@ -24,5 +24,11 @@ const lis = ul.getElementsByClassName("special");
 
 // querySelector
 
+const hi = document.querySelector('h1')
+
+const special  =document.querySelector("li.special")
+
+// querySelectorAll
+
 
 
