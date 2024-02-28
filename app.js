@@ -39,5 +39,4 @@ const password = document.querySelector('input[type="password"]');
 //returns collection of all
 //and you can select one with array methods like Array[index] we getting result as NodeList vs. HTML collection 
 
-
-
+// inner text and text content
