@@ -44,3 +44,9 @@ const password = document.querySelector('input[type="password"]');
 const h1 = document.querySelector('h1');
 
 hi.innerText = "Hello Bear" // changed text on the page
+
+// innnerHTML
+const inputsAll = document.querySelectorAll('input');
+inputsAll[0].value = "HelloBear"
+
+// getAttribute() setAttribute()
