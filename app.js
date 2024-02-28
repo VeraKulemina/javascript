@@ -40,3 +40,7 @@ const password = document.querySelector('input[type="password"]');
 //and you can select one with array methods like Array[index] we getting result as NodeList vs. HTML collection 
 
 // inner text and text content
+
+const h1 = document.querySelector('h1');
+
+hi.innerText = "Hello Bear" // changed text on the page
