@@ -54,3 +54,10 @@ inputsAll[0].value = "HelloBear"
 inputsAll[0].setAttribute("type", "radio");
 
 // finding parents/siblings and children with DOM
+
+// style 
+const p = document.querySelector("p");
+
+p.style.background = 'black';
+p.style.color = "white"
+// getComputedStyle 
