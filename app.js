@@ -1,69 +1,26 @@
-// To select the element with id of bear-photo:
-const img = document.getElementById('bear-photo')
-console.dir(img)
+const todo = document.querySelector('#todos .todo');
 
-//To select the element with id of main:
-document.getElementById('main')
-
-//getElementsByTagName
-
-const inputs = document.getElementsByTagName("input")
-
-//getElementsByClassName
-
-const header = document.getElementsByClassName("header");
-
-//select first element
-
-const ul = document.getElementsByTagName("ul")[0];
-
-//narroving down the search 
+// Setting styles one at a time is not ideal:
+// todo.style.color = 'gray';
+// todo.style.textDecoration = 'line-through';
+// todo.style.opacity = '50%'
 
 
-const lis = ul.getElementsByClassName("special");
+// We can use a class instead!
+// In app.css I've defined a 'done' class that we can apply
 
-// querySelector
+// OPTION 1 - using setAttribute
+//This adds the class 'done', but it overwrites any existing classes...
+// todo.setAttribute('class', 'done');
 
-const hi = document.querySelector('h1')
-
-const special  =document.querySelector("li.special")
-
-// css selector syntax 
-
-const peas = document.querySelector('section li.special')
-
-const password = document.querySelector('input[type="password"]');
-
-// querySelectorAll
-
-//returns collection of all
-//and you can select one with array methods like Array[index] we getting result as NodeList vs. HTML collection 
-
-// inner text and text content
-
-const h1 = document.querySelector('h1');
-
-hi.innerText = "Hello Bear" // changed text on the page
-
-// innnerHTML
-const inputsAll = document.querySelectorAll('input');
-inputsAll[0].value = "HelloBear"
-
-// getAttribute() setAttribute()
-
-inputsAll[0].setAttribute("type", "radio");
-
-// finding parents/siblings and children with DOM
-
-// style 
-const p = document.querySelector("p");
-
-p.style.background = 'black';
-p.style.color = "white"
-// getComputedStyle this is shows actual styles 
-
-const styles = getComputedStyle(p);
-
-//styles.colors will show curent color of the tag on the page
-
-//manipulating Classes
+// OPTION 2 - classList
+// We can use the classList property and it's methods to add,remove, and toggle classes!
+todo.classList.add('done');
+//to remove it
+todo.classList.remove('done');
+//to toggle:
+todo.classList.toggle('done'); //add
+todo.classList.toggle('done'); //remove
+todo.classList.toggle('done'); //add
+todo.classList.toggle('done'); //remove
+todo.classList.toggle('done'); //add
