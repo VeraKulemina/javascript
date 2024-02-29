@@ -30,4 +30,7 @@ todo.classList.toggle('done'); //add
 
 const newH2 = document.createElement('h2');
 
-// prepend, append, insertChild 
+// prepend adds child to the beggining of parent, append adds child to the end of parent, insertBefore( newElement, elementsThatWillBeBelowNewElement)
+// insertAjaxElement("beforebegin", newElement)
+
+//removeChild;
