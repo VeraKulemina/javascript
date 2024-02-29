@@ -60,4 +60,10 @@ const p = document.querySelector("p");
 
 p.style.background = 'black';
 p.style.color = "white"
-// getComputedStyle 
+// getComputedStyle this is shows actual styles 
+
+const styles = getComputedStyle(p);
+
+//styles.colors will show curent color of the tag on the page
+
+//manipulating Classes
