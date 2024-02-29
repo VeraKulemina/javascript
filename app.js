@@ -24,3 +24,10 @@ todo.classList.toggle('done'); //remove
 todo.classList.toggle('done'); //add
 todo.classList.toggle('done'); //remove
 todo.classList.toggle('done'); //add
+
+
+//create element with DOM and JavaScript appendChild method
+
+const newH2 = document.createElement('h2');
+
+// prepend, append, insertChild 
