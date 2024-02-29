@@ -50,3 +50,7 @@ const inputsAll = document.querySelectorAll('input');
 inputsAll[0].value = "HelloBear"
 
 // getAttribute() setAttribute()
+
+inputsAll[0].setAttribute("type", "radio");
+
+// finding parents/siblings and children with DOM
