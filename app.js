@@ -33,4 +33,4 @@ const newH2 = document.createElement('h2');
 // prepend adds child to the beggining of parent, append adds child to the end of parent, insertBefore( newElement, elementsThatWillBeBelowNewElement)
 // insertAjaxElement("beforebegin", newElement)
 
-//removeChild;
+//removeChild; and just .remove 
