@@ -130,3 +130,5 @@ const chart1 = makeCharts(warriorsGames, "Golden State");
 const chart2 = makeCharts(warriorsGames, "Houston");
 gs.appendChild(chart1);
 hr.appendChild(chart2);
+
+//events and event listenets 
