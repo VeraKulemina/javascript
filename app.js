@@ -83,7 +83,7 @@ const warriorsGames = [{
     }
   }
 ]
-function makeCharts (games){
+function makeCharts (games, targetTeam){
 const ulParent = document.createElement('ul');
 for(let game of games) {
   const {
@@ -92,14 +92,16 @@ for(let game of games) {
   } = game;
   const gameLi = document.createElement('li');
   gameLi.innerHTML = getScoreLine(game);
-  // const warriors = hTeam === "Golden State" ? homeTeam : awayTeam; 
-  // gameLi.classList.add(warriors.isWinner? 'win' : 'loss');
-  // isFinite(aPoints > hPoints)
-  // gameLi.innerHTML = `${teamNames} ${scoreLine}`
+  gameLi.classList.add(isWinner (game, targetTeam) ? 'win' : 'loss');
   ulParent.appendChild(gameLi);
 
 }
 return ulParent;
+}
+
+function isWinner({homeTeam, awayTeam}, targetTeam){
+  const target = homeTeam.team === targetTeam ? homeTeam : awayTeam; 
+  return target.isWinner
 }
 
 const getScoreLine = ({homeTeam, awayTeam}) => {
@@ -121,5 +123,10 @@ const getScoreLine = ({homeTeam, awayTeam}) => {
   return `${teamNames} ${scoreLine}`
 }
 
-const chart1 = makeCharts(warriorsGames);
-document.body.prepend(chart1);
+
+const gs = document.querySelector('#gs');
+const hr = document.querySelector('#hr');
+const chart1 = makeCharts(warriorsGames, "Golden State");
+const chart2 = makeCharts(warriorsGames, "Houston");
+gs.appendChild(chart1);
+hr.appendChild(chart2);
