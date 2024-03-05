@@ -5,17 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NBA Score Table</title>
+  <title>Two ways not to add event listeners</title>
   <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-  <section id="gs">
-    <h2>Golden State Warriors</h2>
-  </section>
-  <section id="hr">
-    <h2>Houston</h2>
-  </section>
+  <button onclick='alert("you clicked me")'>Click Me!</button>
+  <button id="clicker">CLICKER</button>
+  <form action =''>
+    <input onclick="console.log('hello world!')" type="range" min="10" max="50">
+  </form>
   <script src="app.js"></script>
 </body>
 
