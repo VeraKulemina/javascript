@@ -1,17 +1,14 @@
-function isTouching(a, b) {
-	const aRect = a.getBoundingClientRect();
-	const bRect = b.getBoundingClientRect();
+const form = document.querySelector('#signup-form');
 
-	return !(
-		aRect.top + aRect.height < bRect.top ||
-		aRect.top > bRect.top + bRect.height ||
-		aRect.left + aRect.width < bRect.left ||
-		aRect.left > bRect.left + bRect.width
-	);
-}
+const creditCardInput = document.querySelector('#cc');
+const termsCheckbox = document.querySelector('#terms');
+const veggieSelect = document.querySelector('#veggie');
 
-const avatar = document.querySelector('#player');
-
-window.addEventListener('keyup', function(e) {
- 	avatar.style.top = "200px"
+form.addEventListener('submit', function(e) {
+	e.preventDefault(); //stops the request from being sent (prevents page reload)
+	console.log('cc', creditCardInput.value);
+	console.log('terms', termsCheckbox.checked);
+	console.log('veggieSelect', veggieSelect.value);
+	//send form data to db
+	//append something to page using form data
 });
