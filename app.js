@@ -1,12 +1,17 @@
-const colors = [
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'blue',
-    'purple',
-    'indigo',
-    'violet'
-]
+function isTouching(a, b) {
+	const aRect = a.getBoundingClientRect();
+	const bRect = b.getBoundingClientRect();
 
-//key events 
+	return !(
+		aRect.top + aRect.height < bRect.top ||
+		aRect.top > bRect.top + bRect.height ||
+		aRect.left + aRect.width < bRect.left ||
+		aRect.left > bRect.left + bRect.width
+	);
+}
+
+const avatar = document.querySelector('#player');
+
+window.addEventListener('keyup', function(e) {
+ 	avatar.style.top = "200px"
+});
