@@ -12,3 +12,5 @@ form.addEventListener('submit', function(e) {
 	//send form data to db
 	//append something to page using form data
 });
+
+// form preventDefault
