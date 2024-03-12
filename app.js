@@ -16,3 +16,6 @@ form.addEventListener('submit', function(e) {
 // form preventDefault
 
 //input and change events
+
+//async js promises
+//requests
