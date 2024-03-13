@@ -49,6 +49,7 @@ moveX(
 									300,
 									1000,
 									() => {
+										//
 										//success callback
 										alert('YOU HAVE A WIDE SCREEN!');
 									},
