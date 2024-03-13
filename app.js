@@ -20,3 +20,5 @@ form.addEventListener('submit', function(e) {
 //async js promises
 //requests
 // call stuck
+
+//async
