@@ -83,8 +83,8 @@
 // 	}
 // );
 
-
-const promiseTest = new Promise((resolve, reject) => {
+const promiseTest =  () =>{
+	return new Promise((resolve, reject) => {
 	setTimeout(() => {
 	const rand = Math.random();
 	if(rand < 0.5) {
@@ -95,9 +95,11 @@ const promiseTest = new Promise((resolve, reject) => {
 	}
 }, 5000);
 })
-promiseTest.then(() => {
+};
+promiseTest()
+.then(() => {
 	console.log("yay we got a dog!");
 })
-promiseTest.catch(() => {
+.catch(() => {
 	console.log(":( no DOG!");
 })
