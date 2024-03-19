@@ -117,3 +117,4 @@ moveX(btn, 100, 1000)
 // 		alert('CANNOT MOVE FURTHER!');
 // 	}
 // );
+//XML Jason 
